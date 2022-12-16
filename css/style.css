@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.margin{
+    margin: 0px 110px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 246, 244);
+    margin: 25px 40px;
+    min-height: 910px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    width: 93%;
+    margin: 30px auto;
+    padding: 0px 30px;
+    box-shadow: 0px 0px 10px 1px rgb(215, 207, 207);
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a:nth-child(n+1){
+    margin-right: 50px;
+}
+.nav .selected{
+    color: black;
+    position: relative;
+}
+.nav .selected:before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50px;
+    left: 0px;
+    top: 60px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+}
+
+.button{
+    background-color: rgb(18, 19, 40);
+    padding: 12px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: rgb(253, 254, 254);
+}
+
+/* Banner Design */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+.banner .left{
+    margin-top: 130px;
+}
+.banner .left h1{
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.banner .left h1 span{
+    font-weight: 700;
+    color: rgb(251, 158, 102)
+}
+.banner .left p{
+    font-size: 17px;
+    margin-top: 30px;
+    color: rgb(161, 161, 161);
+}
+.btn1, .btn2{
+    display: inline-block;
+}
+.button-group{
+    margin-top: 50px;
+}
+.button-group .btn1{
+    color: rgb(254, 242, 234);
+    font-weight: 500;
+    background-color: rgb(254, 157, 102);
+    padding: 22px 50px;
+    border-radius: 12px;
+}
+.button-group .btn1 a{
+    font-size: 18px;
+}
+.button-group .btn2{
+    background-color: transparent;
+    position: relative;
+    margin-left: 90px;
+}
+.button-group .btn2 a{
+    font-size: 18px;
+    color: rgb(12, 12, 12);
+    font-weight: 700;
+}
+.banner .left .button-group .btn2 i{
+    background-color: black;
+    border-radius: 100%;
+    font-size: 64px;
+    color: white;
+    box-shadow: 0px 0px 15px 1px rgb(219, 200, 200);
+    margin: 10px 20px;
+    position: absolute;
+    top: -16px;
+    left: -80px;
+}
+.right{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-div{
+    display: flex;
+
+}
+.icon-div:nth-child(n+2){
+    margin-top: 30px;
+}
+.icon-div .icon{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    box-shadow: 0px 0px 10px 2px rgb(222, 216, 216);
+}
+.icon-div .icon i{
+    font-size: 30px;
+    color: rgb(1, 1, 1);
+    position: absolute;
+    left: 32%;
+    top: 28%;
+}
+.icon-div .text-icon{
+    margin-left: 40px;
+}
+.icon-div .text-icon h1{
+    color: rgb(34, 37, 74);
+    font-size: 30px;
+}
+
+.icon-div .text-icon p{
+    color: rgb(165, 164, 164);
+}
+
+.search-tab{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 1px #d4d3d3;
+    justify-content: space-between;
+    border-radius: 13px;
+    padding: 25px 30px;
+}
+.tab .location, .date, .year, .type{
+    display: flex;
+    flex-direction: column;
+}
+.tab .location{
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.tab h{
+    color: rgb(7, 7, 7);
+}
+.tab p{
+    margin-top: 5px;
+    color: rgb(123, 127, 127);
+    font-weight: 400;
+    font-size: 15px;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+}
+.arrow i{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: rgb(94, 94, 94);
+}
+.tab .button{
+    display: flex;
+    align-items: center;
+    padding: 35px 40px;
+    border-radius: 10px;
+    background-color: rgb(254, 157, 102);
+    font-weight: 400;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 7px;
+}
+.tab .button a{
+    color: rgb(244, 246, 241);
+}
+.tab .button i{
+    font-size: 25px;
+    color: rgb(244, 246, 241);
+    margin-right: 12px;
+}
+
+
+/* Best Seller Section Design */
+.best-seller{
+    min-height: 700px;
+}
+.best{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.best-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 90px;
+}
+.best-header h1{
+    font-size:36px;
+}
+.best-header .btn1{
+    color: rgb(254, 242, 234);
+    font-weight: 500;
+    background-color: rgb(254, 157, 102);
+    padding: 22px 35px;
+    border-radius: 8px;
+}
+.best-header .btn1 a{
+    font-size: 20px;
+    font-weight: 400;
+}
+.best-header .btn1 i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 360px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px .5px rgba(90, 80, 80, 0.097);
+}
+.card .img {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card img {
+    width: 100%;
+}
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 18px 15px 18px;
+}
+.card-details .sec-1{
+    display: flex;
+    justify-content: space-between;
+}
+.card-details h1 {
+    font-size: 16px;
+    position: relative;
+    font-weight: 700;
+    color: rgb(35, 37, 71);
+}
+.card-details .btn1{
+    padding: 4px 20px;
+    border-radius: 3px;
+}
+.card-details .btn1:hover{
+    background-color: rgb(254, 157, 102);
+}
+.prob{
+    background-color: rgb(254, 157, 102);
+}
+.card-details .best-price{
+    font-size: 19px;
+    margin-top: -7px;
+}
+.card-details .best-price span{
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(254, 157, 102);
+}
+.card-details p{
+    color: rgb(159, 159, 159);
+    font-size: 13px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+.card-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0px 90px;
+}
+
+
+/* Stat Section Design */
+.stat-section{
+    margin: 200px 200px 100px;
+}
+.stat-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    margin: 0px 0px;
+    padding: 85px 200px;
+    border-radius: 15px;
+    position: relative;
+}
+.stat::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 140px;
+    background-color: rgb(187, 186, 186);
+    border-radius: 30px;
+    position: absolute;
+    top: 80px;
+    left: 385px;        
+}
+.stat::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 140px;
+    background-color: rgb(187, 186, 186);
+    border-radius: 30px;
+    position: absolute;
+    top: 80px;
+    left: 700px;
+}
+.stat h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+.stat p{
+    margin-top: 20px;
+    color: rgb(107, 107, 107);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Trending Section Design */
+.trend{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 90px;
+    height: 800px;
+    margin-bottom: 50px;
+}
+.trend .trend-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+.trend-header h1{
+    font-size: 36px;
+}
+.trend-header p{
+    color: rgb(150, 149, 149);
+    margin-left: 120px;
+    font-weight: 400;
+    font-size: 17px;
+}
+.trend-header .btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 55px;
+    padding: 0px 10;
+    background-color: rgb(254, 157, 102);
+    color: rgb(251, 245, 237);
+}
+.card-container-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.card-container-2 .card{
+    width: 350px;
+    min-height: 500px;
+    border-radius: 8px;
+}
+.card-container-2 .card .img{
+    width: 350px;
+    height: 500px;
+}
+.card-container-2 .card-details{
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.card-container-2 .sec-1{
+    display: flex;
+    flex-direction: column;
+}
+.card-container-2 .sec-1 p{
+    margin-left: 0;
+}
+.card-container-2 .sec-2 h1{
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(254, 157, 102);
+}
+
+
+/* Footer Design */
+footer{
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(18, 19, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.in-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.in-footer .footer-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.footer-left img{
+    margin-bottom: 25px;
+}
+.footer-left p{
+    color: rgb(122, 124, 146);
+    font-size: 17px;
+    line-height: 1.6;
+}
+.footer-logos{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer-logo:nth-child(n+2){
+    margin-left: 15px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(254, 157, 101);
+}
+.footer-logo i{
+    color: rgb(251, 255, 255);
+    font-size: 19px;
+}
+.in-footer .footer-right{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.footer-right h1{
+    font-size: 23px;
+    color: rgb(254, 253, 254);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer-right p{
+    color: rgb(122, 124, 146);
+    font-size: 15px;
+    margin-top: 8px;
+}
+.bot{
+    height: 5vh;
+    background-color: rgb(254, 157, 102);
+}
